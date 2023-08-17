@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portafolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
     <header>
-        <a href="#" class="icon">Juan</a>
-        <input type="checkbox" id="nav_check" hidden>
+        <a href="#" class="icon">Juan.</a>
         <nav>
-            <a href="#inicio" class="active">Inicio</a>
+            <a href="#inicio">Inicio</a>
             <a href="#portafolio">Portafolio</a>
             <a href="#sobre-mi">Sobre Mí</a>
             <a href="#habilidades">Habilidades</a>
@@ -18,39 +21,45 @@
         </nav>
     </header>
     <section id="inicio">
-        <h1>Hola, soy</h1>
-        <h1 class="subAnimado">Juan Nicolas<br>Flores Delgado</h1>
-        <p>¡Bienvenido a mi sitio web de portafolio!</p>
-        <p class="posicionActual">Estudiando Programación</p>
-        <img src="src/img/perfilPortafolio.jpg" alt="">
+        <div id="inicioIzquierda">
+            <h1>Hola, soy</h1>
+            <h1 class="subAnimado">Juan Nicolas<br>Flores Delgado</h1>
+            <p>¡Bienvenido a mi sitio web de portafolio!</p>
+            <p class="posicionActual">Estudiando Programación</p>
+        </div>
+        <div id="inicioDerecha">
+            <img src="src/img/perfilPortafolio.jpg" alt="">
+        </div>
     </section>
-    <section id="portafolio">
-        <h2>Portafolio</h2>
-        <article id="omegaUp">
-            <h3 id="omegaUpTitle"><span class="negro">omega</span><span class="azul">Up</span></h3>
-            <img src="src/img/omegaUpPortafolio.jpg" alt="">
-            <p id="omegaUptxt">En diciembre del 2022 entre al ICPC, aún no estube en una competencia importante.<br>OmegaUp lo usamos para practicar, resolver problemas con codigo.<br><a href="https://omegaup.com/profile/982jdk/" class="enlacePaginas" target="_blank" rel="noopener noreferrer">Ver Página Web</a></p>
-        </article>
-        <article id="sistemasDigitales">
-            <h3 id="sistemasDigtalesTitle">Primera Página Web</h3>
-            <img src="src/img/sistemasDigitalesPortafolio.jpg" alt="">
-            <p id="sistemasDigitalestxt">En la materia de sistemas digitales teniamos que transformar numeros binarios a octal, decimal y hexadecimal.<br><a href="https://juan7139nf.github.io/num-dec-bin-oct-hexa/" class="enlacePaginas" target="_blank" rel="noopener noreferrer">Ver Página Web</a></p>
-        </article>
-        <article id="imageRender">
-            <h3 id="imageRenderTitle">Los render que me gustaron</h3>
-            <p id="imageRendertxt">No le dedico tanto tiempo a esto, en peliculas y series hay personajes que me gustan y lo recreo en Blender. No hice un proyecto en Blender tan personal.</p>
-            <div class="imageRender">
-                <img src="src/img/miguelPortafolio.jpg" alt="">
-                <img src="src/img/milesPortafolio.jpg" alt="">
-                <img src="src/img/moonknightPortafolio.jpg" alt="">
-                <img src="src/img/mrsnightPortafolio.jpg" alt="">
-                <img src="src/img/rendermoonkPortafolio.jpg" alt="">
-                <img src="src/img/apisonaflorPortafolio.jpg" alt="">
-                <img src="src/img/rendermonknightPortafolio.jpg" alt="">
-            </div>
-        </article>
+    <section id="portafolio" class="contenido">
+        <h2 id="desplegarPortafolio">Portafolio</h2>
+        <div id="portafolioContenido">
+            <article id="omegaUp">
+                <h3 id="omegaUpTitle"><span class="negro">omega</span><span class="azul">Up</span></h3>
+                <img src="src/img/omegaUpPortafolio.jpg" alt="">
+                <p id="omegaUptxt">En diciembre del 2022 entre al ICPC, aún no estube en una competencia importante.<br>OmegaUp lo usamos para practicar, resolver problemas con codigo.<br><a href="https://omegaup.com/profile/982jdk/" class="enlacePaginas" target="_blank" rel="noopener noreferrer">Ver Página Web</a></p>
+            </article>
+            <article id="sistemasDigitales">
+                <h3 id="sistemasDigtalesTitle">Primera Página Web</h3>
+                <img src="src/img/sistemasDigitalesPortafolio.jpg" alt="">
+                <p id="sistemasDigitalestxt">En la materia de sistemas digitales teniamos que transformar numeros binarios a octal, decimal y hexadecimal.<br><a href="https://juan7139nf.github.io/num-dec-bin-oct-hexa/" class="enlacePaginas" target="_blank" rel="noopener noreferrer">Ver Página Web</a></p>
+            </article>
+            <article id="imageRender">
+                <h3 id="imageRenderTitle">Los render que me gustaron</h3>
+                <p id="imageRendertxt">No le dedico tanto tiempo a esto, en peliculas y series hay personajes que me gustan y lo recreo en Blender. No hice un proyecto en Blender tan personal.</p>
+                <div class="imageRender">
+                    <img src="src/img/miguelPortafolio.jpg" alt="">
+                    <img src="src/img/milesPortafolio.jpg" alt="">
+                    <img src="src/img/moonknightPortafolio.jpg" alt="">
+                    <img src="src/img/mrsnightPortafolio.jpg" alt="">
+                    <img src="src/img/rendermoonkPortafolio.jpg" alt="">
+                    <img src="src/img/apisonaflorPortafolio.jpg" alt="">
+                    <img src="src/img/rendermonknightPortafolio.jpg" alt="">
+                </div>
+            </article>
+        </div>
     </section>
-    <section id="sobre-mi">
+    <section id="sobre-mi" class="contenido">
         <h2>Sobre Mí</h2>
         <p>¡Saludos! Me llamo Juan Nicolas Flores Delago y soy un estudiante de la UPDS-TARIJA, actualmente cursando el 4to semestre. Además de mis estudios, tengo una gran afición por la música y me encanta escuchar a bandas como Skillet y Fall Out Boy. Su energía y letras realmente conectan conmigo, y encuentro inspiración en su música para enfrentar los desafíos académicos y personales.<br>Una de las cosas que más me emociona es formar parte del grupo de programación ICPC, donde he estado involucrado durante más de medio año. Esta experiencia me ha permitido profundizar mis habilidades en programación y trabajar en equipo para resolver problemas complejos. Me encanta el desafío que presenta cada problema y la satisfacción que se siente al encontrar soluciones efectivas.<br>Además de mis actividades académicas y de programación, dedico parte de mi tiempo libre a la creatividad. Experimento con Blender, una herramienta increíble para la creación de gráficos en 3D. A través de pequeños proyectos, estoy desarrollando mis habilidades en diseño y animación. Lo interesante es que mi enfoque en Blender es autodidacta, lo que me permite explorar y aprender de manera independiente, lo cual es gratificante. <br>Otro aspecto que me define es mi pasión por los videojuegos. Soy un ávido jugador de Fortnite y disfruto de la emoción y las colaboraciones que este juego ofrece. Además de ser una forma de entretenimiento, encuentro que los juegos también pueden desarrollar habilidades como la toma de decisiones rápida y controlar el estrés.<br>En resumen, soy un estudiante entusiasta y autodidacta que está en constante búsqueda de nuevas formas de crecer y aprender. Ya sea a través de la música, la programación, la creación en 3D o los videojuegos, encuentro inspiración y desafíos en cada aspecto de mi vida. ¡Estoy emocionado por las oportunidades que el futuro me depara y por seguir expandiendo mis horizontes!</p>
         <h2>Aspiraciones</h2>
@@ -82,7 +91,7 @@
             <p class="metastxt">El diseño, la animación y los videojuegos. Creo que mi camino está trazado hacia la creación de experiencias visuales inmersivas y emocionantes, así como hacia el crecimiento personal y profesional. Estoy emocionado por las oportunidades que el futuro me depara y por las puertas que se abrirán a medida que persigo mis metas con determinación y entusiasmo.</p>
         </div>
     </section>
-    <section id="habilidades">
+    <section id="habilidades" class="contenido">
         <h2>Habilidades</h2>
         <div class="habilidad">
             <div class="barraProgramacion">
@@ -205,9 +214,9 @@
             </div>
         </div>
     </section>
-    <section id="contacto">
+    <section id="contacto" class="contenido">
         <h2>Contacto</h2>
-        <a href=""><button>Puedes contactarme a través de WhatsApp</button></a>
+        <a href="https://wa.link/p2eoeo"><button>Puedes contactarme a través de WhatsApp</button></a>
         <form action="#" method="post">
             <ul>
                 <li class="correoDesing">

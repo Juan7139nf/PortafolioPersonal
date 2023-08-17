@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: 'Alkatra', cursive;
+    color: #ffffff;
+    background-color: #000000;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-thumb{
+    background-color: #00ffdd;
+    border-radius: 5px;
+}
+header{
+    display: flex;
+    position: fixed;
+    padding: 0 10px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00ffdd;
+}
+.icon{
+    color: #000000;
+    font-size: 20px;
+    padding: 0 10px;
+    font-weight: bold;
+}
+.icon:hover{
+    color: #fffb00;
+    background-color: #00bfa6;
+    border-radius: 7px;
+}
+nav{
+    padding-right: 15px;
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    padding: 0 7px;
+    color: #004037;
+}
+a:hover{
+    color: #00201c;
+    background-color: #00a2ff;
+    border-radius: 5px;
+}
+#inicio{
+    padding-top: 20px;
+    columns: 310px 2;
+    text-align: center;
+}
+#inicioIzquierda{
+    padding: 20px;
+    font-size: 20px;
+    color: #00ffdd;
+}
+h1{
+    color: #00ffdd;
+    line-height: 50px;
+}
+.subAnimado{
+    color: #fffb00;
+    font-size: 65px;
+}
+#inicioDerecha{
+    text-align: center;
+}
+#inicioDerecha > img{
+    width: 310px;
+    border-radius: 50%;
+}
+h2{
+    padding: 20px;
+}
+img{
+    max-width: 400px;
+    margin: 10px auto;
+}
+.contenido{
+    background-color: #111111;
+    width: 95%;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 6px;
+    border-left: 4px solid #00bfa6;
+    padding-top: 20px;
+}
