@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <a href="#" class="icon">Juan.</a>
-        <nav>
+        <a href="#" class="logo">Juan.</a>
+        <nav class="navegador">
             <a href="#inicio">Inicio</a>
             <a href="#portafolio">Portafolio</a>
             <a href="#sobre-mi">Sobre Mí</a>
@@ -21,17 +21,15 @@
         </nav>
     </header>
     <section id="inicio">
-        <div id="inicioIzquierda">
-            <h1>Hola, soy</h1>
-            <h1 class="subAnimado">Juan Nicolas<br>Flores Delgado</h1>
-            <p>¡Bienvenido a mi sitio web de portafolio!</p>
-            <p class="posicionActual">Estudiando Programación</p>
-        </div>
-        <div id="inicioDerecha">
-            <img src="src/img/perfilPortafolio.jpg" alt="">
+        <div class="inicioPared">
+            <h1 class="inicioHola">Hola, soy</h1>
+            <img src="src/img/perfilPortafolio.jpg" alt="" class="inicioImg">
+            <h1 class="inicioNombre">Juan Nicolas<br>Flores Delgado</h1>
+            <p class="inicioP">¡Bienvenido a mi sitio web de portafolio!<br>Estudiando Programación</p>
         </div>
     </section>
-    <section id="portafolio" class="contenido">
+    <div class="espacio" id="portafolio"></div>
+    <section class="contenido">
         <h2 id="desplegarPortafolio">Portafolio</h2>
         <div id="portafolioContenido">
             <article id="omegaUp">
@@ -47,19 +45,20 @@
             <article id="imageRender">
                 <h3 id="imageRenderTitle">Los render que me gustaron</h3>
                 <p id="imageRendertxt">No le dedico tanto tiempo a esto, en peliculas y series hay personajes que me gustan y lo recreo en Blender. No hice un proyecto en Blender tan personal.</p>
-                <div class="imageRender">
-                    <img src="src/img/miguelPortafolio.jpg" alt="">
-                    <img src="src/img/milesPortafolio.jpg" alt="">
-                    <img src="src/img/moonknightPortafolio.jpg" alt="">
-                    <img src="src/img/mrsnightPortafolio.jpg" alt="">
-                    <img src="src/img/rendermoonkPortafolio.jpg" alt="">
-                    <img src="src/img/apisonaflorPortafolio.jpg" alt="">
-                    <img src="src/img/rendermonknightPortafolio.jpg" alt="">
+                <div class="imageRenderFlex">
+                    <img src="src/img/miguelPortafolio.jpg" alt="" class="imgPortafolio">
+                    <img src="src/img/milesPortafolio.jpg" alt="" class="imgPortafolio">
+                    <img src="src/img/moonknightPortafolio.jpg" alt="" class="imgPortafolio">
+                    <img src="src/img/mrsnightPortafolio.jpg" alt="" class="imgPortafolio">
+                    <img src="src/img/rendermoonkPortafolio.jpg" alt="" class="imgPortafolio">
+                    <img src="src/img/apisonaflorPortafolio.jpg" alt="" class="imgPortafolio">
+                    <img src="src/img/rendermonknightPortafolio.jpg" alt="" class="imgPortafolio">
                 </div>
             </article>
         </div>
-    </section>
-    <section id="sobre-mi" class="contenido">
+    </section>    
+    <div class="espacio" id="sobre-mi"></div>
+    <section class="contenido">
         <h2>Sobre Mí</h2>
         <p>¡Saludos! Me llamo Juan Nicolas Flores Delago y soy un estudiante de la UPDS-TARIJA, actualmente cursando el 4to semestre. Además de mis estudios, tengo una gran afición por la música y me encanta escuchar a bandas como Skillet y Fall Out Boy. Su energía y letras realmente conectan conmigo, y encuentro inspiración en su música para enfrentar los desafíos académicos y personales.<br>Una de las cosas que más me emociona es formar parte del grupo de programación ICPC, donde he estado involucrado durante más de medio año. Esta experiencia me ha permitido profundizar mis habilidades en programación y trabajar en equipo para resolver problemas complejos. Me encanta el desafío que presenta cada problema y la satisfacción que se siente al encontrar soluciones efectivas.<br>Además de mis actividades académicas y de programación, dedico parte de mi tiempo libre a la creatividad. Experimento con Blender, una herramienta increíble para la creación de gráficos en 3D. A través de pequeños proyectos, estoy desarrollando mis habilidades en diseño y animación. Lo interesante es que mi enfoque en Blender es autodidacta, lo que me permite explorar y aprender de manera independiente, lo cual es gratificante. <br>Otro aspecto que me define es mi pasión por los videojuegos. Soy un ávido jugador de Fortnite y disfruto de la emoción y las colaboraciones que este juego ofrece. Además de ser una forma de entretenimiento, encuentro que los juegos también pueden desarrollar habilidades como la toma de decisiones rápida y controlar el estrés.<br>En resumen, soy un estudiante entusiasta y autodidacta que está en constante búsqueda de nuevas formas de crecer y aprender. Ya sea a través de la música, la programación, la creación en 3D o los videojuegos, encuentro inspiración y desafíos en cada aspecto de mi vida. ¡Estoy emocionado por las oportunidades que el futuro me depara y por seguir expandiendo mis horizontes!</p>
         <h2>Aspiraciones</h2>
@@ -91,7 +90,8 @@
             <p class="metastxt">El diseño, la animación y los videojuegos. Creo que mi camino está trazado hacia la creación de experiencias visuales inmersivas y emocionantes, así como hacia el crecimiento personal y profesional. Estoy emocionado por las oportunidades que el futuro me depara y por las puertas que se abrirán a medida que persigo mis metas con determinación y entusiasmo.</p>
         </div>
     </section>
-    <section id="habilidades" class="contenido">
+    <div class="espacio" id="habilidades"></div>
+    <section class="contenido">
         <h2>Habilidades</h2>
         <div class="habilidad">
             <div class="barraProgramacion">
@@ -101,8 +101,7 @@
                         HTML
                         <span>62</span>%                    
                     </p>
-                    <div class="barraProgreso">    
-                    </div>
+                    <progress max="100" value="62"></progress>
                 </div>
                 <div class="barraCss">
                     <p class="barraText">
@@ -214,25 +213,20 @@
             </div>
         </div>
     </section>
-    <section id="contacto" class="contenido">
+    <div class="espacio" id="contacto"></div>
+    <section class="contactos">
         <h2>Contacto</h2>
-        <a href="https://wa.link/p2eoeo"><button>Puedes contactarme a través de WhatsApp</button></a>
+        <a href="https://wa.link/p2eoeo" id="bottonWhatsApp">Puedes contactarme a través de WhatsApp</a>
         <form action="#" method="post">
-            <ul>
-                <li class="correoDesing">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" name="inputNombre" id="nombre">
-                </li>
-                <li class="correoDesing">
-                    <label for="gmail">Correo Electronico</label>
-                    <input type="email" name="inputGmail" id="gmail">
-                </li>
-                <li class="correoDesing">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="inputMensaje" id="mensaje" cols="30" rows="10"></textarea>
-                </li>
-                <button type="submit">Enviar a Correo Electronico</button>
-            </ul>
+            <div class="formularioContacto">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="inputNombre" id="nombre">    
+                <label for="gmail">Correo Electrónico</label>
+                <input type="email" name="inputGmail" id="gmail">    
+                <label for="mensaje">Mensaje</label>
+                <textarea name="inputMensaje" id="mensaje" cols="10" rows="5"></textarea>    
+                <button type="submit">Enviar a Correo Electrónico</button>
+            </div>
         </form>
     </section>
     <footer>

@@ -4,7 +4,10 @@
 body{
     font-family: 'Alkatra', cursive;
     color: #ffffff;
-    background-color: #000000;
+    background-color: #777777;
+    .espacio{
+        height: 45px;
+    }
 }
 body::-webkit-scrollbar{
     width: 10px;
@@ -13,78 +16,164 @@ body::-webkit-scrollbar-thumb{
     background-color: #00ffdd;
     border-radius: 5px;
 }
-header{
-    display: flex;
-    position: fixed;
-    padding: 0 10px;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #00ffdd;
-}
-.icon{
-    color: #000000;
-    font-size: 20px;
-    padding: 0 10px;
-    font-weight: bold;
-}
-.icon:hover{
-    color: #fffb00;
-    background-color: #00bfa6;
-    border-radius: 7px;
-}
-nav{
-    padding-right: 15px;
-    text-align: right;
+h2{
+    color: #00ffdd;
+    font-size: 30px;
+    padding: 15px 50px;
 }
 a{
+    color: #000000;
     text-decoration: none;
-    padding: 0 7px;
-    color: #004037;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 18px;
+    border-radius: 5px;
+    background-color: #00ffdd;
 }
 a:hover{
-    color: #00201c;
-    background-color: #00a2ff;
-    border-radius: 5px;
+    color: #ffffff;
+    background-color: #00806e;
 }
-#inicio{
-    padding-top: 20px;
-    columns: 310px 2;
-    text-align: center;
+header{
+    background-color: #00ffdd;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    position: sticky;
+    padding: 0px 15px;    
+    border-radius: 0 0 0 9px;
+    .logo{
+        font-size: 25px;
+    }    
+    .navegador{
+        text-align: right;
+    }    
 }
-#inicioIzquierda{
-    padding: 20px;
-    font-size: 20px;
-    color: #00ffdd;
-}
-h1{
-    color: #00ffdd;
-    line-height: 50px;
-}
-.subAnimado{
-    color: #fffb00;
-    font-size: 65px;
-}
-#inicioDerecha{
-    text-align: center;
-}
-#inicioDerecha > img{
-    width: 310px;
-    border-radius: 50%;
-}
-h2{
-    padding: 20px;
-}
-img{
-    max-width: 400px;
-    margin: 10px auto;
+#inicio{   
+    padding-bottom: 50px; 
+    background-image: url(../img/rendermonknightPortafolio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    .inicioPared{
+        margin: 0 auto;
+        width: 450px;
+        background-color: #2222224f;
+        border-radius: 0 0 20px 20px;  
+        text-align: center;
+        .inicioHola{
+            padding: 50px 0 0 50px;
+            font-size: 30px;
+            text-align: left;
+        }
+        .inicioImg{
+            width: 80%;
+            border-radius: 50%;
+            border: 8px solid #00806e;
+        }
+        .inicioNombre{
+            font-size: 65px;
+            line-height: 65px;
+            padding: 20px 0;
+        }
+        .inicioP{
+            font-size: 25px;
+            line-height: 30px;
+            padding-bottom: 10px;
+        }
+    }
 }
 .contenido{
-    background-color: #111111;
-    width: 95%;
-    margin: 20px auto;
-    max-width: 900px;
-    border-radius: 6px;
-    border-left: 4px solid #00bfa6;
-    padding-top: 20px;
+    width: 97%;
+    padding-bottom: 8px;
+    margin: 0 auto;
+    border-left: 5px solid #00ffcc;
+    border-top: 5px solid #00ffcc;
+    border-radius: 8px;
+    background-color: #222222;
+    #portafolioContenido{
+        width: 99%;
+        margin: 0 auto;
+        border-radius: 5px;
+        padding-bottom: 5px;
+        background-color: #333333;
+        #imageRender{
+            width: 99%;
+            margin: 0 auto;
+            border-radius: 3px;
+            padding-bottom: 5px;
+            background-color: #111111;
+        }
+    }
+    & progress{
+        width: 90%;
+        accent-color: #00ffcc;
+    }
+    & progress[value]{
+        height: 50px;
+    }
+}
+
+.contactos{
+    text-align: center;
+    border-radius: 0 30px 0 0;
+    background-color: #0b0b0b;
+    padding-bottom: 10px;
+    #bottonWhatsApp{
+        display: inline-block;
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #09b347;
+        color: #ffffff;
+        border: 3px solid #ffffff;
+    }
+    #bottonWhatsApp:hover{
+        background-color: #00ff5e;
+        color: #000000;
+    }
+    .formularioContacto label{
+        display: block;
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .formularioContacto input[type="text"], input[type="email"], textarea{        
+        font-family: 'Alkatra', cursive;
+        font-size: 20px;
+        width: 78%;
+        padding: 5px;
+        border: 5px solid #999999;
+        border-radius: 5px;
+        text-align: center;
+    }
+    .formularioContacto textarea{
+        resize: vertical;
+    }
+    .formularioContacto button{
+        font-family: 'Alkatra', cursive;
+        display: block;
+        width: 400px;
+        padding: 10px;
+        margin: 30px auto;
+        font-size: 25px;
+        font-weight: bold;
+        background-color: #00ffdd;
+        color: #000000;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+    }
+    .formularioContacto button:hover{
+        background-color: #00806e;
+        color: #ffffff;
+    }
+}
+footer{
+    background-color: #000000;
+    text-align: right;
+    & p{
+        padding: 30px;
+        font-size: 18px;
+    }
 }
