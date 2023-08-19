@@ -4,7 +4,7 @@
 body{
     font-family: 'Alkatra', cursive;
     color: #ffffff;
-    background-color: #777777;
+    background-color: #353535;
     .espacio{
         height: 45px;
     }
@@ -106,19 +106,56 @@ header{
             background-color: #111111;
         }
     }
-    & progress{
-        width: 90%;
-        accent-color: #00ffcc;
+    #contenidoSobreMi{
+        columns: 400px 2;
+        width: 95%;
+        margin: 0 auto;
+        #textSobreMi{
+            line-height: 20px;
+            .inicioParrafo{
+                font-weight: bold;
+                color: #00ffdd;
+            }
+        }
     }
-    & progress[value]{
-        height: 50px;
+    .habilidad{
+        display: flex;
+        width: 98%;
+        margin: 0 auto;
+        border-radius: 8px;
+        background-color: #111111;
+        text-align: center;
+        & h3{
+            font-size: 22px;
+            padding: 10px;
+        }
+        .barraProgramacion{
+            width: 50%;
+        }
+        .barraBlender{
+            width: 50%;
+        }
+        .barraText{
+            text-align: left;
+            font-size: 17px;
+            margin-left: 10%;
+            & span{
+                color: #00ffdd;
+            }
+        }
+        & progress{
+            width: 95%;
+            accent-color: #00ffcc;
+        }
+        & progress[value]{
+            height: 30px;
+        }
     }
 }
-
 .contactos{
     text-align: center;
     border-radius: 0 30px 0 0;
-    background-color: #0b0b0b;
+    background: linear-gradient( #111111 0, #000000 60%);
     padding-bottom: 10px;
     #bottonWhatsApp{
         display: inline-block;
