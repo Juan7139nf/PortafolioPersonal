@@ -30,6 +30,9 @@ a{
     border-radius: 5px;
     background-color: #00ffdd;
 }
+p{    
+    line-height: 20px;
+}
 a:hover{
     color: #ffffff;
     background-color: #00806e;
@@ -106,21 +109,9 @@ header{
             background-color: #111111;
         }
     }
-    #contenidoSobreMi{
-        columns: 400px 2;
-        width: 95%;
-        margin: 0 auto;
-        #textSobreMi{
-            line-height: 20px;
-            .inicioParrafo{
-                font-weight: bold;
-                color: #00ffdd;
-            }
-        }
-    }
     .habilidad{
         display: flex;
-        width: 98%;
+        width: 90%;
         margin: 0 auto;
         border-radius: 8px;
         background-color: #111111;
@@ -149,6 +140,82 @@ header{
         }
         & progress[value]{
             height: 30px;
+        }
+    }
+}
+.contenidoSobreMiPotafolio{
+    background-color: #000000;
+    padding-bottom: 10px;
+    & h2{
+        color: #00ffb3;
+        padding-bottom: 1px;
+    }
+    #contenidoSobreMi{
+        columns: 400px 2;
+        width: 95%;
+        margin: 0 auto;
+        #textSobreMi{
+            color: #ffffff;
+            .inicioParrafo{
+                font-weight: bold;
+                color: #5effea;
+            }
+        }
+    }
+    .objetivo{
+        background-color: #1a1e1f;
+        width: 96%;
+        margin: 0 auto;
+        padding: 13px;
+        border-radius: 15px 15px 0 0;
+        columns: 400px 2;
+        color: #000000;
+        & h3{
+            text-align: center;
+            column-span: all;
+            color: #00e7b9;
+        }
+        #juego{
+            color: #c6ecff;
+        }
+        #inglesA{
+            color: #7bffff;
+            & h4{
+                padding-top: 15px;
+            }
+        }
+        #cortoA{
+            color: #67ffe1;
+            & h4{
+                padding-top: 15px;
+            }
+        }
+    }
+    .metas{
+        background-color: #0f0f10;
+        width: 96%;
+        margin: 0 auto;
+        padding: 13px;
+        border-radius: 0 0 15px 15px;
+        columns: 400px 2;
+        color: #000000;
+        & h3{
+            text-align: center;
+            column-span: all;
+            color: #aaffef;
+        }
+        #animacionEfectos{
+            color: #00ffdd;
+        }
+        #trabajarEmpresa{
+            color: #00ffb3;
+            & h4{
+                padding-top: 15px;
+            }
+        }
+        .metastxt{
+            padding-top: 11px;
+            color: #ffffff;
         }
     }
 }
