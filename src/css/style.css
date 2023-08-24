@@ -1,3 +1,26 @@
+@keyframes nombreAnimado{
+    0%{
+        letter-spacing: 25px;
+        opacity: 1;
+        text-shadow: 36px 32px #ffa500, -36px -32px #00806e;
+    }
+    20%{
+        opacity: 0.6;
+    }
+    50%{
+        letter-spacing: normal;
+        opacity: 1;        
+        text-shadow: 6px 2px #ffa500, -6px -2px #00806e;
+    }    
+    80%{
+        opacity: 0.6;
+    }
+    100%{
+        letter-spacing: 25px;
+        opacity: 1;        
+        text-shadow: 36px 32px #ffa500, -36px -32px #00806e;
+    }
+}
 *{
     margin: 0;
 }
@@ -72,13 +95,15 @@ header{
         }
         .inicioImg{
             width: 80%;
-            border-radius: 50%;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
             border: 8px solid #00806e;
         }
         .inicioNombre{
             font-size: 65px;
             line-height: 65px;
             padding: 20px 0;
+            text-shadow: 6px 2px #ffa500, -6px -2px #00806e;
+            animation: nombreAnimado 10s infinite;
         }
         .inicioP{
             font-size: 25px;
@@ -156,28 +181,49 @@ header{
             color: #ffffff;
         }
         .imageRenderFlex{
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            padding: 10px;
-            width: 95%;
+            padding: 30px;
+            max-width: 1200px;
             margin: 0 auto;
-            .imagen{
-                text-align: center;
-                & img{
-                    width: 100%;
-                    height: 200px;
-                    cursor: pointer;
-                    transition: transform 0.3s, width 0.3s, height 0.3s;
-                    object-fit: cover;
-                    object-position: top left;
-                }
-                & img:hover{
-                    transform: scale(1.6);
-                    width: 230px;
-                    height: auto;
-                }
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+            "n1 n2 n3 n4"
+            "n5 n5 n6 n6"
+            "n7 n7 n7 n7"
+            ;
+            gap: 10px;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                cursor: pointer;
+                transition: transform 3s;
             }
+            & img:hover{
+                transform: scale(1.05);
+            }
+        }
+        .imagen1{
+            grid-area: n1;
+        }
+        .imagen2{
+            grid-area: n2;
+        }        
+        .imagen3{
+            grid-area: n3;
+        }
+        .imagen4{
+            grid-area: n4;
+        }
+        .imagen5{
+            grid-area: n5;
+        }
+        .imagen6{
+            grid-area: n6;
+        }
+        .imagen7{
+            grid-area: n7;
         }
     }
 }
@@ -202,7 +248,7 @@ header{
     }
     .objetivo{
         background-color: #1a1e1f;
-        width: 96%;
+        width: 92%;
         margin: 0 auto;
         padding: 13px;
         border-radius: 15px 15px 0 0;
@@ -231,7 +277,7 @@ header{
     }
     .metas{
         background-color: #0f0f10;
-        width: 96%;
+        width: 92%;
         margin: 0 auto;
         padding: 13px;
         border-radius: 0 0 15px 15px;
