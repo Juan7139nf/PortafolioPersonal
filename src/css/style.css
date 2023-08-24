@@ -227,6 +227,9 @@ header{
         }
     }
 }
+#sobre-mi{
+    background-color: #000;
+}
 .contenidoSobreMiPotafolio{
     background-color: #000000;
     padding-bottom: 10px;
@@ -336,6 +339,10 @@ header{
                 color: #00ffdd;
             }
         }
+        .barraText::first-letter{
+            color: #00ffdd;
+            font-weight: bold;
+        }
         & progress{
             width: 95%;
             accent-color: #00ffcc;
@@ -369,6 +376,9 @@ header{
         margin-top: 20px;
         font-size: 20px;
         font-weight: bold;
+    }
+    & label::first-letter{
+        color: #00ffdd;
     }
     .formularioContacto input[type="text"], input[type="email"], textarea{        
         font-family: 'Alkatra', cursive;
@@ -407,5 +417,12 @@ footer{
     & p{
         padding: 30px;
         font-size: 18px;
+        & b{
+            color: #00ffcc;
+        }
+    }
+    & p::first-letter{
+        font-weight: bold;
+        color: #00ffdd;
     }
 }
