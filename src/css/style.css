@@ -22,6 +22,7 @@
     }
 }
 *{
+    padding: 0;
     margin: 0;
 }
 body{
@@ -48,19 +49,20 @@ p{
     line-height: 20px;
 }
 header{
+    position: fixed;
     background-color: #00ffdd;
+    width: 100%;    
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    top: 0px;
-    position: sticky;
-    padding: 0px 15px;    
-    border-radius: 0 0 0 9px;
+    align-items: center;
     .logo{
         font-size: 25px;
     }    
     .navegador{
         text-align: right;
+        @media (max-width: 700px){
+            display: none;
+        }
     } 
     & a{
         color: #000000;
@@ -75,6 +77,77 @@ header{
         color: #ffffff;
         background-color: #00806e;
     }   
+    .menuDespegable{
+        & label{
+            cursor: pointer;
+            .hamburger{
+                width: 41px;
+                height: 41px;
+                justify-content: center;
+                background-color: #00ffdd;
+                border-radius: 56% 44% 82% 18% / 21% 20% 80% 79% ;
+                transition: background-color 0.5s;
+                .lineArriba{
+                    top: 7.8px;
+                    margin-left: 5px;
+                    position: absolute;
+                    width: 30px;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #000;
+                    transition: background-color 1s;
+                }
+                .lineHaburger{
+                    top: 19px;
+                    margin-left: 10px;
+                    position: absolute;
+                    width: 25px;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #000;
+                    transition: background-color 1s;
+                }
+                .lineAbajo{
+                    top: 30px;
+                    margin-left: 15px;
+                    position: absolute;
+                    width: 20px;
+                    height: 4px;
+                    border-radius: 2px;
+                    background-color: #000;
+                    transition: background-color 1s;
+                }
+            }
+        }
+        & input{
+            display: none;
+        }
+        .menuApareceDesaparece{
+            position: fixed;
+            top: 42px;
+            right: -250px;
+            width: 200px;
+            text-align: center;
+            background-color: #00ffdd;
+            transition: right 2s;
+            border-bottom-left-radius: 25px;
+            & ul{
+                & li{
+                    margin: 13px 0;
+                    list-style: none;
+                    & a{
+                        font-size: 23px;
+                    }
+                }
+            }
+        }
+        & input:checked ~ .menuApareceDesaparece{
+            right: 0;
+        }
+        @media (min-width: 700px){
+            display: none;
+        }
+    }
 }
 #inicio{   
     padding-bottom: 50px; 
