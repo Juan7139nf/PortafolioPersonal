@@ -2,7 +2,7 @@
     0%{
         letter-spacing: 25px;
         opacity: 1;
-        text-shadow: 36px 32px #ffa500, -36px -32px #00806e;
+        text-shadow: 36px 32px var(--colorSecundario), -36px -32px var(--hover);
     }
     20%{
         opacity: 0.6;
@@ -10,7 +10,7 @@
     50%{
         letter-spacing: normal;
         opacity: 1;        
-        text-shadow: 6px 2px #ffa500, -6px -2px #00806e;
+        text-shadow: 6px 2px var(--colorSecundario), -6px -2px var(--hover);
     }    
     80%{
         opacity: 0.6;
@@ -18,17 +18,42 @@
     100%{
         letter-spacing: 25px;
         opacity: 1;        
-        text-shadow: 36px 32px #ffa500, -36px -32px #00806e;
+        text-shadow: 36px 32px var(--colorSecundario), -36px -32px var(--hover);
     }
 }
 *{
     padding: 0;
     margin: 0;
 }
+:root{
+    --colorPrincipal: #00ffdd;
+    --colorSecundario: #ffa500;
+    --hover: #00806e;
+    --background: #000;
+    --background1: #111;    
+    --background2: #222; 
+    --background3: #333;    
+    --backgroundObj: #1a1e1f;
+    --backgroundMet: #0f0f10;
+    --colorText: #fff;
+    --bordeContacto: #999;
+    --objTitle: #00e7b9;
+    --obj1: #c6ecff;
+    --obj2: #7bffff;
+    --obj3: #67ffe1;
+    --metTitle: #aaffef;
+    --met1: #00ffdd;
+    --met2: #00ffb3;    
+    --met3: #c6ecff;
+    --textB: #5effea;
+    --textSub: #00ffb3;
+    --omegaUp: #1556a1;
+    --transparet: #2222224f;
+}
 body{
     font-family: 'Alkatra', cursive;
-    color: #ffffff;
-    background-color: #353535;
+    color: var(--colorText);
+    background-color: var(--background3);
     .espacio{
         height: 45px;
     }
@@ -37,11 +62,11 @@ body::-webkit-scrollbar{
     width: 10px;
 }
 body::-webkit-scrollbar-thumb{
-    background-color: #00ffdd;
+    background-color: var(--colorPrincipal);
     border-radius: 5px;
 }
 h2{
-    color: #00ffdd;
+    color: var(--colorPrincipal);
     font-size: 30px;
     padding: 15px 50px;
 }
@@ -50,7 +75,7 @@ p{
 }
 header{
     position: fixed;
-    background-color: #00ffdd;
+    background-color: var(--colorPrincipal);
     width: 100%;    
     display: flex;
     justify-content: space-between;
@@ -65,17 +90,17 @@ header{
         }
     } 
     & a{
-        color: #000000;
+        color: var(--background);
         text-decoration: none;
         font-size: 18px;
         font-weight: bold;
         padding: 0 18px;
         border-radius: 5px;
-        background-color: #00ffdd;
+        background-color: var(--colorPrincipal);
     }
     & a:hover{
-        color: #ffffff;
-        background-color: #00806e;
+        color: var(--colorText);
+        background-color: var(--hover);
     }   
     .menuDespegable{
         & label{
@@ -84,7 +109,7 @@ header{
                 width: 41px;
                 height: 41px;
                 justify-content: center;
-                background-color: #00ffdd;
+                background-color: var(--colorPrincipal);
                 border-radius: 80% 20% 70% 30% / 30% 20% 80% 70%;
                 transition: background-color 2s;
                 .lineArriba{
@@ -94,7 +119,7 @@ header{
                     width: 30px;
                     height: 4px;
                     border-radius: 2px;
-                    background-color: #000;
+                    background-color: var(--background);
                     transition: background-color 1s;
                 }
                 .lineHaburger{
@@ -104,7 +129,7 @@ header{
                     width: 25px;
                     height: 4px;
                     border-radius: 2px;
-                    background-color: #000;
+                    background-color: var(--background);
                     transition: background-color 1s;
                 }
                 .lineAbajo{
@@ -114,7 +139,7 @@ header{
                     width: 20px;
                     height: 4px;
                     border-radius: 2px;
-                    background-color: #000;
+                    background-color: var(--background);
                     transition: background-color 1s;
                 }
             }
@@ -128,7 +153,7 @@ header{
             right: -250px;
             width: 200px;
             text-align: center;
-            background-color: #00ffdd;
+            background-color: var(--colorPrincipal);
             transition: right 2s;
             border-bottom-left-radius: 25px;
             & ul{
@@ -143,15 +168,15 @@ header{
         }
         & label:hover{        
             .hamburger{
-                background-color: #000;
+                background-color: var(--background);
                 .lineArriba{
-                    background-color: #00ffcc;
+                    background-color: var(--colorPrincipal);
                 }
                 .lineHaburger{
-                    background-color: #00ffcc;
+                    background-color: var(--colorPrincipal);
                 }
                 .lineAbajo{
-                    background-color: #00ffcc;
+                    background-color: var(--colorPrincipal);
                 }
             }
         }
@@ -159,13 +184,13 @@ header{
             .hamburger{
                 background-color: #000;
                 .lineArriba{
-                    background-color: #00ffcc;
+                    background-color: var(--colorPrincipal);
                 }
                 .lineHaburger{
-                    background-color: #00ffcc;
+                    background-color: var(--colorPrincipal);
                 }
                 .lineAbajo{
-                    background-color: #00ffcc;
+                    background-color: var(--colorPrincipal);
                 }
             }
         }
@@ -186,7 +211,7 @@ header{
     .inicioPared{
         margin: 0 auto;
         width: 450px;
-        background-color: #2222224f;
+        background-color: var(--transparet);
         border-radius: 0 0 20px 20px;  
         text-align: center;
         .inicioHola{
@@ -197,7 +222,7 @@ header{
         .inicioImg{
             width: 80%;
             border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            border: 8px solid #00806e;
+            border: 8px solid var(--hover);
             transition: border-radius 3s;
         }
         .inicioImg:hover{
@@ -207,7 +232,7 @@ header{
             font-size: 65px;
             line-height: 65px;
             padding: 20px 0;
-            text-shadow: 6px 2px #ffa500, -6px -2px #00806e;
+            text-shadow: 6px 2px var(--colorSecundario), -6px -2px var(--hover);
             animation: nombreAnimado 10s infinite;
         }
         .inicioP{
@@ -221,7 +246,7 @@ header{
     #desplegarPortafolio{
         text-align: center;
         font-size: 50px;
-        color: #ffffff;
+        color: var(--colorText);
     }
     #portafolioContenido{
         margin: 10px;
@@ -232,20 +257,20 @@ header{
             text-decoration: none;
             #omegaUpTitle{
                 font-size: 25px;
-                color: #1556a1;
+                color: var(--omegaUp);
             }
             & img{
                 width: 80%;
             }
             #omegaUptxt{
-                color: #ffffff;
+                color: var(--colorText);
                 margin: 0 auto;
                 width: 80%;
                 font-size: 18px;
                 padding-bottom: 130px;
                 & b{
                     font-size: 19px;
-                    color: #1556a1;
+                    color: var(--omegaUp);
                 }
             }
         }
@@ -253,37 +278,37 @@ header{
             text-decoration: none;
             #sistemasDigtalesTitle{
                 font-size: 25px;
-                color: #00e7b9;
+                color: var(--objTitle);
             }
             & img{
                 width: 80%;
             }
             #sistemasDigitalestxt{
-                color: #ffffff;
+                color: var(--colorText);
                 margin: 0 auto;
                 width: 80%;
                 font-size: 18px;
             }
             & b{
                 font-size: 19px;
-                color: #00e7b9;
+                color: var(--objTitle);
             }
         }
     }
     #imageRender{
-        background-color: #111111;
+        background-color: var(--background1);
         padding-bottom: 8px;
         #imageRenderTitle{
             font-size: 25px;
             text-align: center;
-            color: #00e7b9;
+            color: var(--objTitle);
         }
         #imageRendertxt{
             width: 95%;
             margin: 0 auto;
             font-size: 17px;
             text-align: center;
-            color: #ffffff;
+            color: var(--colorText);
         }
         .imageRenderFlex{
             padding: 30px;
@@ -333,13 +358,13 @@ header{
     }
 }
 #sobre-mi{
-    background-color: #000;
+    background-color: var(--background);
 }
 .contenidoSobreMiPotafolio{
-    background-color: #000000;
+    background-color: var(--background);
     padding-bottom: 10px;
     & h2{
-        color: #00ffb3;
+        color: var(--textSub);
         padding-bottom: 1px;
     }
     #contenidoSobreMi{
@@ -347,67 +372,67 @@ header{
         width: 95%;
         margin: 0 auto;
         #textSobreMi{
-            color: #ffffff;
+            color: var(--colorText);
             .inicioParrafo{
                 font-weight: bold;
-                color: #5effea;
+                color: var(--textB);
             }
         }
     }
     .objetivo{
-        background-color: #1a1e1f;
+        background-color: var(--backgroundObj);
         width: 92%;
         margin: 0 auto;
         padding: 13px;
         border-radius: 15px 15px 0 0;
         columns: 400px 2;
-        color: #000000;
+        color: var(--background);
         & h3{
             text-align: center;
             column-span: all;
-            color: #00e7b9;
+            color: var(--objTitle);
         }
         #juego{
-            color: #c6ecff;
+            color: var(--obj1);
         }
         #inglesA{
-            color: #7bffff;
+            color: var(--obj2);
             & h4{
                 padding-top: 15px;
             }
         }
         #cortoA{
-            color: #67ffe1;
+            color: var(--obj3);
             & h4{
                 padding-top: 15px;
             }
         }
     }
     .metas{
-        background-color: #0f0f10;
+        background-color: var(--backgroundMet);
         width: 92%;
         margin: 0 auto;
         padding: 13px;
         border-radius: 0 0 15px 15px;
         columns: 400px 2;
-        color: #000000;
+        color: var(--background);
         & h3{
             text-align: center;
             column-span: all;
-            color: #aaffef;
+            color: var(--metTitle);
         }
         #animacionEfectos{
-            color: #00ffdd;
+            color: var(--met1);
         }
         #trabajarEmpresa{
-            color: #00ffb3;
+            color: var(--met2);
             & h4{
                 padding-top: 15px;
             }
         }
         .metastxt{
             padding-top: 11px;
-            color: #ffffff;
+            color: var(--met3);
         }
     }
 }
@@ -415,16 +440,16 @@ header{
     width: 97%;
     padding-bottom: 8px;
     margin: 0 auto;
-    border-left: 5px solid #00ffcc;
-    border-top: 5px solid #00ffcc;
+    border-left: 5px solid var(--colorPrincipal);
+    border-top: 5px solid var(--colorPrincipal);
     border-radius: 8px;
-    background-color: #222222;    
+    background-color: var(--background2);
     .habilidad{
         display: flex;
         width: 90%;
         margin: 0 auto;
         border-radius: 8px;
-        background-color: #111111;
+        background-color: var(--background1);
         text-align: center;
         & h3{
             font-size: 22px;
@@ -441,16 +466,16 @@ header{
             font-size: 17px;
             margin-left: 10%;
             & span{
-                color: #00ffdd;
+                color: var(--colorPrincipal);
             }
         }
         .barraText::first-letter{
-            color: #00ffdd;
+            color: var(--colorPrincipal);
             font-weight: bold;
         }
         & progress{
             width: 95%;
-            accent-color: #00ffcc;
+            accent-color: var(--colorPrincipal);
         }
         & progress[value]{
             height: 30px;
@@ -458,23 +483,24 @@ header{
     }
 }
 .contactos{
+    border-top: 7px solid var(--colorPrincipal);
     text-align: center;
     border-radius: 0 30px 0 0;
-    background: linear-gradient( #111111 0, #000000 60%);
+    background: linear-gradient( var(--background1) 0, var(--background) 60%);
     padding-bottom: 10px;
     #bottonWhatsApp{
         text-decoration: none;
         font-size: 20px;
         font-weight: bold;
         background-color: #09b347;
-        color: #ffffff;
-        border: 3px solid #ffffff;
+        color: var(--colorText);
+        border: 3px solid var(--colorText);
         border-radius: 7px;
         padding: 0 11px;
     }
     #bottonWhatsApp:hover{
         background-color: #00ff5e;
-        color: #000000;
+        color: var(--background);
     }
     .formularioContacto label{
         display: block;
@@ -483,14 +509,14 @@ header{
         font-weight: bold;
     }
     & label::first-letter{
-        color: #00ffdd;
+        color: var(--colorPrincipal)
     }
     .formularioContacto input[type="text"], input[type="email"], textarea{        
         font-family: 'Alkatra', cursive;
         font-size: 20px;
         width: 78%;
         padding: 5px;
-        border: 5px solid #999999;
+        border: 5px solid var(--bordeContacto);
         border-radius: 5px;
         text-align: center;
     }
@@ -505,29 +531,29 @@ header{
         margin: 30px auto;
         font-size: 25px;
         font-weight: bold;
-        background-color: #00ffdd;
-        color: #000000;
+        background-color: var(--colorPrincipal);
+        color: var(--background);
         border-radius: 5px;
         border: none;
         cursor: pointer;
     }
     .formularioContacto button:hover{
-        background-color: #00806e;
-        color: #ffffff;
+        background-color: var(--hover);
+        color: var(--colorText);
     }
 }
 footer{
-    background-color: #000000;
+    background-color: var(--background);
     text-align: right;
     & p{
         padding: 30px;
         font-size: 18px;
         & b{
-            color: #00ffcc;
+            color: var(--colorPrincipal);
         }
     }
     & p::first-letter{
         font-weight: bold;
-        color: #00ffdd;
+        color: var(--colorPrincipal);
     }
 }
