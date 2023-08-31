@@ -41,8 +41,8 @@
     --textSub: #00be85;
     --omegaUp: #1556a1;
     --transparet: #cccccc4f;
-    --colorCO: #1fdfed;
-    --colorActive: #fff700;
+    --colorCO: #fff;
+    --colorActive: #ffa500;
 }
 :root[data-theme="dark"]{
     --colorPrincipal: #00ffdd;
@@ -106,7 +106,7 @@ header{
     }    
     .navegador{
         text-align: right;
-        @media (max-width: 700px){
+        @media (max-width: 850px){
             display: none;
         }
     } 
@@ -255,7 +255,7 @@ header{
         & input:checked ~ .menuApareceDesaparece{
             right: 0;
         }
-        @media (min-width: 700px){
+        @media (min-width: 850px){
             display: none;
         }
     }
