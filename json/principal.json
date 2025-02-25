@@ -1,0 +1,31 @@
+{
+    "name": "<Juan Nicolas_",
+    "last-name":"Flores Delgado/>",
+    "yo-complete": "Juan Nicolas Flores Delgado",
+    "soy": [
+        {
+            "profesion": "Ingeniero de Sistemas"
+        },
+        {
+            "profesion": "Programador"
+        }
+    ],
+    "imgs": {
+        "foto": "me.webp",
+        "foto_bg": "bg_inicio.jpeg"
+    },
+    "cards-principal": [
+        {
+            "id": 1,
+            "nombre": "Producto 1",
+            "descripcion": "Descripción del producto 1",
+            "precio": 100
+        },
+        {
+            "id": 2,
+            "nombre": "Producto 2",
+            "descripcion": "Descripción del producto 2",
+            "precio": 200
+        }
+    ]
+}

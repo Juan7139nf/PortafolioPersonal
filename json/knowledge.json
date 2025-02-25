@@ -1,0 +1,27 @@
+[
+    {
+        "img": "https://www.computerworld.com/wp-content/uploads/2024/09/1641435-0-83488500-1726092926-windows-10_windows_microsoft_laptop_keyboard_update_-by-nirodesign-getty-100799328-orig.jpg?quality=50&strip=all&w=1024",
+        "title": "Backend",
+        "ruta":"/knowledge/backend"
+    },
+    {
+        "img": "http://images.pexels.com/photos/12903271/pexels-photo-12903271.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+        "title": "Frontend",
+        "ruta":"/knowledge/frontend"
+    },
+    {
+        "img": "https://blog.facialix.com/wp-content/uploads/2023/11/curso-gratis-cpp.jpg",
+        "title": "Servidores",
+        "ruta":"/knowledge/servers"
+    },
+    {
+        "img": "https://whatsup.es/wp-content/uploads/2018/10/curso_completo_de_ingles.jpg",
+        "title": "Base de datos",
+        "ruta":"/knowledge/database"
+    },
+    {
+        "img": "https://acm.iteso.mx/share/ICPCLogoRegionals_4c.jpg",
+        "title": "Bibliotecas",
+        "ruta":"/knowledge/libraries"
+    }
+]
