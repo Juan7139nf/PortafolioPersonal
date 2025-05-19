@@ -51,7 +51,9 @@ export default function About() {
         initialValue="<p>This is the initial content of the editor.</p>"
         init={{
           selector: "textarea#open-source-plugins",
+          width: "100%",
           height: 600,
+          resize: false,
           plugins: [
             "advcode",
             "anchor",
@@ -85,7 +87,7 @@ export default function About() {
             "link image media | alignleft aligncenter alignright alignjustify | " +
             "outdent indent | numlist bullist | table | " +
             "code preview fullscreen | forecolor backcolor | emoticons charmap | " +
-            "insertdatetime anchor pagebreak",
+            "insertdatetime anchor pagebreak | codesample",
 
           menubar: "file edit view insert format tools table help",
           quickbars_selection_toolbar:
