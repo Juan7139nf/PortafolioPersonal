@@ -95,7 +95,7 @@ export default function About() {
           content_style:
             "body { font-family:Helvetica,Arial,sans-serif; font-size:16px }",
           skin: "oxide-dark",
-          content_css: "dark",
+          content_css: "light",
           content_style:
             "body { font-family:Helvetica,Arial,sans-serif; font-size:16px }",
         }}

@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 
 export default function Navbar() {
   const pathname = usePathname();
-  const ocultarNavbar = ["/", "/error"].includes(pathname);
+  const ocultarNavbar = ["/", "/portafolio"].includes(pathname);
 
   if (ocultarNavbar) return null;
 
